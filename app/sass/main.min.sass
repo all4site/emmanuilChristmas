@@ -1,0 +1,43 @@
+@import fonts
+@import base
+@import vars
+
+// @import btn
+
+.top
+	position: relative
+	grid-template-columns: 2fr 1fr
+	background: linear-gradient(90deg, #CC3939 0%, #E14646 52%, #CC3939 100%)
+	color: #700F0F
+	height: 60px
+	align-content: center
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.27)
+
+	h2
+		font-size: 19px
+		text-shadow: 0 1px rgba(255, 255, 255, 0.18)
+		font-weight: bold
+
+.topOrder
+	display: grid
+	grid-template-columns: min-content
+	justify-content: center
+
+	.btn
+		border: 1px solid $white
+		padding: 7px 20px
+		color: $white
+		text-transform: uppercase
+
+.topText
+	justify-content: end
+	display: grid
+	align-content: center
+
+.content
+	background: url("../img/christmas-traditions-bg-platinum.jpg") no-repeat
+	background-position: center
+	background-size: cover
+
+// ADAPTIVE
+@import media
