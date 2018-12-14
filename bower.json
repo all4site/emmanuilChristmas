@@ -17,6 +17,10 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "all4site-fontawesome": "^0.0.1",
-    "all4site-normalize": "^0.0.1"
+    "all4site-normalize": "^0.0.1",
+    "mediaelement": "^4.2.9"
+  },
+  "devDependencies": {
+    "all4site-jqueryui": "^0.0.1"
   }
 }

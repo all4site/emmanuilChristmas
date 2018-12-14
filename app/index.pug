@@ -1,32 +1,37 @@
 include _header
 body
+	section.videoContainer
+		.video.grid
+			.videoPlaer
+				video(controls width="640" height="400" src="img/Christmas Traditions TRAILER_UA.mp4" poster="img/poater.JPG")
 	section.top.grid
 		.topText
-			h2 CBN Documentaries presents Christmas: <em>The Story Behind the Traditions</em>
+			h2 CBN презентує унікальний фільм <em>Різдво: Історія традицій</em>
 		.topOrder
-			a(href="#!").btn заказать
-	section.content.grid
-		h2 Discover the Meaning Behind Your Favorite Holiday Traditions & Experience the Special Reading of a Beloved Christmas Classic!
-		.contentImg
-			img(src="img/christmas-traditions-bundle1.png", alt="")
-		.contentText
-			p Filmed in eight countries, Christmas: The Story Behind the Traditions takes you around the world to discover the history of Christmas and the meaning behind the traditions you love to celebrate.
-			p This Christmas, you can add greater meaning to your holiday as you learn:
-			ul
-				li Why December 25th is the historical birthdate of Jesus
-				li What is the symbolism behind Christmas trees and stockings?
-				li How did the tradition of gift-giving begin?
-				li Bonus Features—Advent: The Coming of Christ, The Christmas Truce: Holiday in the Trenches, Zak’s Shop: Christmas Gifts from Bethlehem
-		.contentWatch
-			a.btn трейлер
-	section.order
-		h2 заказать
-		.form
-			form(action="")
-				input(name="name" type="text")
-				label name
-				input(name="email" type="email")
-				label email
+			a(href="https://bit.ly/2BbMjqp" data-target="menu" target="_blank").btn замовити
+	section.contentBackground
+		.wrapper
+			.content.grid
+				h1 Наповніть свої серця та домівки <br>особливими моментами радості!
+				.contentImg
+					img(src="img/BANER1.jpg", alt="")
+				.contentText
+					ul
+						li Чому Різдво святкують 25-го грудня?
+						li Як єпископ став Санта-Клаусом?
+						li Чому ми святкуємо з ялинкою, вінками та панчохами?
+						li Хто розпочав традицію різдвяних подарунків?
+					br
+					p Компанія CBN підготувала унікальний документальний фільм про Різдво, яким ми хочемо поділитися з вами і водночас допомогти тим, хто цього дуже потребує.
+					p Зробіть <a href="https://donate.emmanuil.tv/#fast_donation" class="link" target="_blank">пожертву</a> від 300 грн  та отримайте ексклюзивний різдвяний фільм!
+					p Також ви матимете можливість отримати особливу книгу “Найкращі цитати світу”. Для цього <a href="https://bit.ly/2BbMjqp" class="link" target="_blank">зареєструйтеся.</a>
+					p
+			.contentWatch
+				a(href="#!").btn трейлер
+	section.orderBackground.grid#order
+		.order.grid
+			h2 заказать
+			form(action="").form.grid
 				input(type="submit" value="send").btn
 
-	include _footer
+		include _footer

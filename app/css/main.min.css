@@ -1,28 +1,29 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Merriweather-ex";
-  src: url("../fonts/Merriweather/Merriweather-Regular.ttf.eot");
-  src: url("../fonts/Merriweather/Merriweather-Regular.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Regular.ttf.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Regular.ttf.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Regular.ttf.svg#Merriweather-ex") format("svg");
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot");
+  src: url("../fonts/Merriweather/Merriweather-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Regular.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Regular.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Regular.svg#Merriweather-ex") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather-ex";
-  src: url("../fonts/Merriweather/Merriweather-Bold.ttf.eot");
-  src: url("../fonts/Merriweather/Merriweather-Bold.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Bold.ttf.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Bold.ttf.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Bold.ttf.svg#Merriweather-ex") format("svg");
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot");
+  src: url("../fonts/Merriweather/Merriweather-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Bold.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Bold.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Bold.svg#Merriweather-ex") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather-ex";
-  src: url("../fonts/Merriweather/Merriweather-Light.ttf.eot");
-  src: url("../fonts/Merriweather/Merriweather-Light.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Light.ttf.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Light.ttf.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Light.ttf.svg#Merriweather-ex") format("svg");
+  src: url("../fonts/Merriweather/Merriweather-Light.eot");
+  src: url("../fonts/Merriweather/Merriweather-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-Light.woff") format("woff"), url("../fonts/Merriweather/Merriweather-Light.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-Light.svg#Merriweather-ex") format("svg");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: "Merriweather-ex";
-  src: url("../fonts/Merriweather/Merriweather-LightItalic.ttf.eot");
-  src: url("../fonts/Merriweather/Merriweather-LightItalic.ttf.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf.woff") format("woff"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf.svg#Merriweather-ex") format("svg");
+  src: url("../fonts/Merriweather/Merriweather-LightItalic.eot");
+  src: url("../fonts/Merriweather/Merriweather-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather/Merriweather-LightItalic.woff") format("woff"), url("../fonts/Merriweather/Merriweather-LightItalic.ttf") format("truetype"), url("../fonts/Merriweather/Merriweather-LightItalic.svg#Merriweather-ex") format("svg");
   font-weight: 100;
   font-style: italic; }
 
@@ -75,6 +76,20 @@ a {
   color: #000;
   text-decoration: none; }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: minmax(1100px, 320px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+em {
+  font-weight: bold; }
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px; }
+
 .top {
   position: relative;
   grid-template-columns: 2fr 1fr;
@@ -112,7 +127,123 @@ a {
   -ms-flex-line-pack: center;
       align-content: center; }
 
-.content {
+.contentBackground {
   background: url("../img/christmas-traditions-bg-platinum.jpg") no-repeat;
-  background-position: center;
   background-size: cover; }
+
+.content {
+  grid-template-columns: 1fr 1.5fr;
+  margin-top: 60px; }
+  .content h1 {
+    grid-column: span 2;
+    text-align: center;
+    color: #09376C;
+    max-width: 920px;
+    font-size: 33px;
+    font-weight: bold;
+    justify-self: center;
+    margin: 30px 0; }
+  .content ul {
+    padding-left: 20px; }
+    .content ul li {
+      list-style-type: disc;
+      display: list-item;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 18px; }
+
+.contentText {
+  padding-left: 30px; }
+
+.contentWatch {
+  justify-self: center;
+  margin: 20px 0 150px; }
+  .contentWatch .btn {
+    border: 1px solid #c03f3f;
+    color: #c03f3f;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-weight: bold; }
+    .contentWatch .btn:before {
+      font-family: "Font Awesome 5 Free Solid";
+      content: "";
+      padding-right: 10px; }
+
+.orderBackground {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EEF4FB), color-stop(50%, #E1EEF4), to(#E1EEf4));
+  background: linear-gradient(180deg, #EEF4FB 0%, #E1EEF4 50%, #E1EEf4 100%);
+  grid-template-columns: minmax(770px, 320px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.order {
+  -webkit-box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.1);
+  margin-top: -50px;
+  background: linear-gradient(136.69deg, #F5FAFB 0%, #E3EDF0 48.04%, #e1eef4 100%);
+  justify-items: center;
+  padding-bottom: 50px;
+  grid-auto-rows: -webkit-min-content auto;
+  grid-auto-rows: min-content auto; }
+  .order h2 {
+    color: #09376C;
+    text-transform: uppercase;
+    margin-top: 60px;
+    font-weight: bold;
+    font-size: 33px;
+    margin-bottom: 10px; }
+  .order .form {
+    grid-template-columns: 1fr; }
+    .order .form label {
+      opacity: 0;
+      margin: 0 10px;
+      font-style: italic;
+      position: relative;
+      z-index: 99;
+      margin-bottom: -10px; }
+    .order .form input {
+      padding: 10px;
+      margin: 10px; }
+    .order .form .btn {
+      margin: 20px 10px;
+      text-transform: uppercase;
+      color: #c03f3f;
+      background: inherit;
+      border: 1px solid #c03f3f;
+      cursor: pointer; }
+
+.footer {
+  margin: 60px 0;
+  color: #8098A4;
+  justify-self: center; }
+
+.videoPlaer {
+  width: 600px; }
+
+.videoContainer {
+  position: relative;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.show {
+  opacity: 1;
+  z-index: 9;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.video {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.link {
+  color: #c03f3f; }

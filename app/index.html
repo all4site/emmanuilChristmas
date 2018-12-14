@@ -5,46 +5,60 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/><!--build:css css/main.min.css-->
 <!--bower:css-->
-<link rel="stylesheet" href="wendor/all4site-fontawesome/dist/css/fontawesome-all.css"/>
-<link rel="stylesheet" href="wendor/all4site-normalize/normalize.css"/><!--endbower-->
+<link rel="stylesheet" href="wendor/all4site-fontawesome/dist/css/fontawesome-all.css" />
+<link rel="stylesheet" href="wendor/all4site-normalize/normalize.css" />
+<link rel="stylesheet" href="wendor/mediaelement/build/mediaelementplayer.css" />
+<!--endbower-->
 <link rel="stylesheet" href="css/main.min.css"/><!--endbuild-->
 <link rel="icon" href="img/favicon.png"/>
 <title>Document</title>
 <body>
+  <section class="videoContainer">
+    <div class="video grid">
+      <div class="videoPlaer">
+        <video controls="controls" width="640" height="400" src="img/Christmas Traditions TRAILER_UA.mp4" poster="img/poater.JPG"></video>
+      </div>
+    </div>
+  </section>
   <section class="top grid">
     <div class="topText">
-      <h2>CBN Documentaries presents Christmas: <em>The Story Behind the Traditions</em></h2>
+      <h2>CBN презентує унікальний фільм <em>Різдво: Історія традицій</em></h2>
     </div>
-    <div class="topOrder"><a class="btn" href="#!">заказать</a></div>
+    <div class="topOrder"><a class="btn" href="https://bit.ly/2BbMjqp" data-target="menu" target="_blank">замовити</a></div>
   </section>
-  <section class="content grid">
-    <h2>Discover the Meaning Behind Your Favorite Holiday Traditions & Experience the Special Reading of a Beloved Christmas Classic!</h2>
-    <div class="contentImg"><img src="img/christmas-traditions-bundle1.png" alt=""/></div>
-    <div class="contentText">
-      <p>Filmed in eight countries, Christmas: The Story Behind the Traditions takes you around the world to discover the history of Christmas and the meaning behind the traditions you love to celebrate.</p>
-      <p>This Christmas, you can add greater meaning to your holiday as you learn:</p>
-      <ul>
-        <li>Why December 25th is the historical birthdate of Jesus</li>
-        <li>What is the symbolism behind Christmas trees and stockings?</li>
-        <li>How did the tradition of gift-giving begin?</li>
-        <li>Bonus Features—Advent: The Coming of Christ, The Christmas Truce: Holiday in the Trenches, Zak’s Shop: Christmas Gifts from Bethlehem</li>
-      </ul>
+  <section class="contentBackground">
+    <div class="wrapper">
+      <div class="content grid">
+        <h1>Наповніть свої серця та домівки <br>особливими моментами радості!</h1>
+        <div class="contentImg"><img src="img/BANER1.jpg" alt=""/></div>
+        <div class="contentText">
+          <ul>
+            <li>Чому Різдво святкують 25-го грудня?</li>
+            <li>Як єпископ став Санта-Клаусом?</li>
+            <li>Чому ми святкуємо з ялинкою, вінками та панчохами?</li>
+            <li>Хто розпочав традицію різдвяних подарунків?</li>
+          </ul><br/>
+          <p>Компанія CBN підготувала унікальний документальний фільм про Різдво, яким ми хочемо поділитися з вами і водночас допомогти тим, хто цього дуже потребує.</p>
+          <p>Зробіть <a href="https://donate.emmanuil.tv/#fast_donation" class="link" target="_blank">пожертву</a> від 300 грн  та отримайте ексклюзивний різдвяний фільм!</p>
+          <p>Також ви матимете можливість отримати особливу книгу “Найкращі цитати світу”. Для цього <a href="https://bit.ly/2BbMjqp" class="link" target="_blank">зареєструйтеся.</a></p>
+          <p></p>
+        </div>
+      </div>
+      <div class="contentWatch"><a class="btn" href="#!">трейлер</a></div>
     </div>
-    <div class="contentWatch"><a class="btn">трейлер</a></div>
   </section>
-  <section class="order">
-    <h2>заказать</h2>
-    <div class="form">
-      <form action="">
-        <input name="name" type="text"/>
-        <label>name</label>
-        <input name="email" type="email"/>
-        <label>email</label>
+  <section class="orderBackground grid" id="order">
+    <div class="order grid">
+      <h2>заказать</h2>
+      <form class="form grid" action="">
         <input class="btn" type="submit" value="send"/>
       </form>
     </div>
-  </section><!--build:js js/main.min.js-->
+    <div class="footer"><span>© 2018 The Christian Broadcasting Network</span><br/><span>© 2018 Асоціація "Еммануїл"</span></div><!--build:js js/main.min.js-->
 <!--bower:js-->
-  <script src="wendor/jquery/dist/jquery.js"></script><!--endbower-->
-  <script src="js/main.js"></script><!--endbuild-->
+<script src="wendor/jquery/dist/jquery.js"></script>
+<script src="wendor/mediaelement/build/mediaelement-and-player.js"></script>
+<!--endbower-->
+    <script src="js/main.js"></script><!--endbuild-->
+  </section>
 </body>
